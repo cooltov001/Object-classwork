@@ -1,0 +1,143 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            width: 100%;
+            max-width: 450px;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px 25px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #4facfe;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .result-box {
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            display: none;
+        }
+
+        .result-box.show {
+            display: block;
+        }
+
+        .grade-A { background-color: #e8f5e9; border: 2px solid #4caf50; color: #2e7d32; }
+        .grade-B { background-color: #e3f2fd; border: 2px solid #2196f3; color: #1565c0; }
+        .grade-C { background-color: #fff8e1; border: 2px solid #ffc107; color: #f57f17; }
+        .grade-D { background-color: #fff3e0; border: 2px solid #ff9800; color: #e65100; }
+        .grade-E { background-color: #fbe9e7; border: 2px solid #ff5722; color: #bf360c; }
+        .grade-F { background-color: #ffebee; border: 2px solid #f44336; color: #c62828; }
+        .invalid  { background-color: #fce4ec; border: 2px solid #e91e63; color: #ad1457; }
+
+        .score-text {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .grade-text {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .grade-scale {
+            margin-top: 30px;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 18px;
+        }
+
+        .grade-scale h3 {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .scale-list {
+            list-style: none;
+            font-size: 13px;
+            color: #666;
+            columns: 2;
+        }
+
+        .scale-list li {
+            margin-bottom: 6px;
+        }

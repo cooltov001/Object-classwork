@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator (Simple)</title>
+    <link rel="stylesheet" href="Gradebok.css">
+</head>
+<body>
+
+    <div class="box">
+        <h1>Student Grade Calculator</h1>
+        <p id="score"></p>
+        <p id="grade"></p>
+    </div>
+
+    <script>
+
+        const score = 38;
+
+        document.getElementById("score").innerHTML = "Score: " + score;
+
+        if (score < 0 || score > 100) {
+            document.getElementById("grade").innerHTML = "Invalid score";
+        }
+        else if (score >= 70 && score <= 100) {
+            document.getElementById("grade").innerHTML = "Grade A";
+        }
+        else if (score >= 60 && score <= 69) {
+            document.getElementById("grade").innerHTML = "Grade B";
+        }
+        else if (score >= 50 && score <= 59) {
+            document.getElementById("grade").innerHTML = "Grade C";
+        }
+        else if (score >= 45 && score <= 49) {
+            document.getElementById("grade").innerHTML = "Grade D";
+        }
+        else if (score >= 40 && score <= 44) {
+            document.getElementById("grade").innerHTML = "Grade E";
+        }
+        else if (score >= 0 && score <= 39) {
+            document.getElementById("grade").innerHTML = "Grade F";
+        }
+    </script>
+
+</body>
+</html>

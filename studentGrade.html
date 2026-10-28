@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="studentGrade.cs">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Student Grade Calculator</h1>
+            <p>Enter a score to see the grade</p>
+        </div>
+
+        <div class="content">
+            <div class="input-group">
+                <label for="scoreInput">Student Score (0 - 100)</label>
+                <input type="number" id="scoreInput" placeholder="e.g. 25">
+            </div>
+
+            <button onclick="calculateGrade()">Check Grade</button>
+
+            <div id="resultBox" class="result-box">
+                <p class="score-text" id="scoreDisplay"></p>
+                <p class="grade-text" id="gradeDisplay"></p>
+            </div>
+
+            <div class="grade-scale">
+                <h3>Grade Scale</h3>
+                <ul class="scale-list">
+                    <li>70 - 100 → Grade A</li>
+                    <li>60 - 69 → Grade B</li>
+                    <li>50 - 59 → Grade C</li>
+                    <li>45- 49 → Grade D</li>
+                    <li>40 - 44 → Grade E</li>
+                    <li>0 - 39 → Grade F</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateGrade() {
+
+            let score = Number(document.getElementById("scoreInput").value);
+
+            let resultBox = document.getElementById("resultBox");
+            let scoreDisplay = document.getElementById("scoreDisplay");
+            let gradeDisplay = document.getElementById("gradeDisplay");
+
+            resultBox.className = "result-box show";
+
+            if (score < 0 || score > 100 || isNaN(score)) {
+                scoreDisplay.innerHTML = "Score: " + score;
+                gradeDisplay.innerHTML = "Invalid score";
+                resultBox.classList.add("invalid");
+                return;
+            }
+             
+
+            let grade;
+
+            if (score >= 70 && score <= 100) {
+                grade = "Grade A";
+                resultBox.classList.add("grade-A");
+            } 
+            else if (score >= 60 && score <= 69) {
+                grade = "Grade B";
+                resultBox.classList.add("grade-B");
+            } 
+            else if (score >= 50 && score <= 59) {
+                grade = "Grade C";
+                resultBox.classList.add("grade-C");
+            } 
+            else if (score >= 45 && score <= 49) {
+                grade = "Grade D";
+                resultBox.classList.add("grade-D");
+            } 
+            else if (score >= 40 && score <= 44) {
+                grade = "Grade E";
+                resultBox.classList.add("grade-E");
+            } 
+            else if (score >= 0 && score <= 39) {
+                grade = "Grade F";
+                resultBox.classList.add("grade-F");
+            }
+
+            scoreDisplay.innerHTML = "Score: " + score;
+            gradeDisplay.innerHTML = grade;
+        }
+    </script>
+
+</body>
+</html>
