@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continental – Bites</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2" width="22" height="22"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></span>
+        Bites
+      </a>
+      <form class="header-search" action="menu.html" method="get">
+        <input type="search" name="q" placeholder="Search foods...">
+        <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      </form>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="swallow.html">Swallow</a></li>
+          <li><a href="rice.html">Rice</a></li>
+          <li><a href="continental.html">Continental</a></li>
+          <li><a href="soups.html">Soups</a></li>
+          <li><a href="snacks.html">Snacks</a></li>
+        </ul>
+        <div class="header-actions">
+          <a href="cart.html" class="cart-btn" style="position:relative;">
+            <span class="cart-count" style="position:absolute;top:-4px;right:-4px;background:#f5c518;color:#1a1a1a;font-size:0.7rem;font-weight:700;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;">0</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="page-hero">
+    <h1>Continental</h1>
+    <p>20 delicious continental dishes. All written in this HTML file.</p>
+  </section>
+  <section class="section">
+    <div class="cards-grid">
+      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Pasta"></div>
+        <div class="card-body">
+          <h3>Pasta</h3>
+          <div class="stars">★★★★★</div>
+          <p>Creamy or tomato pasta.</p>
+          <div class="card-footer">
+            <span class="price">₦3,500</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="41" data-name="Pasta" data-price="3500" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Chicken Pizza"></div>
+        <div class="card-body">
+          <h3>Chicken Pizza</h3>
+          <div class="stars">★★★★★</div>
+          <p>Chicken pizza with fresh toppings.</p>
+          <div class="card-footer">
+            <span class="price">₦4,500</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="42" data-name="Chicken Pizza" data-price="4500" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Hamburger"></div>
+        <div class="card-body">
+          <h3>Hamburger</h3>
+          <div class="stars">★★★★★</div>
+          <p>Juicy beef burger.</p>
+          <div class="card-footer">
+            <span class="price">₦3,200</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="43" data-name="Hamburger" data-price="3200" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="French Fries"></div>
+        <div class="card-body">
+          <h3>French Fries</h3>
+          <div class="stars">★★★★★</div>
+          <p>Crispy golden fries.</p>
+          <div class="card-footer">
+            <span class="price">₦1,500</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="44" data-name="French Fries" data-price="1500" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Chicken Shawarma"></div>
+        <div class="card-body">
+          <h3>Chicken Shawarma</h3>
+          <div class="stars">★★★★★</div>
+          <p>Marinated chicken wrap.</p>
+          <div class="card-footer">
+            <span class="price">₦2,800</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="45" data-name="Chicken Shawarma" data-price="2800" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Fish Curry"></div>
+        <div class="card-body">
+          <h3>Fish Curry</h3>
+          <div class="stars">★★★★★</div>
+          <p>Spicy fish curry.</p>
+          <div class="card-footer">
+            <span class="price">₦3,800</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="46" data-name="Fish Curry" data-price="3800" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Spaghetti Bolognese"></div>
+        <div class="card-body">
+          <h3>Spaghetti Bolognese</h3>
+          <div class="stars">★★★★★</div>
+          <p>Classic meat sauce spaghetti.</p>
+          <div class="card-footer">
+            <span class="price">₦3,600</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="47" data-name="Spaghetti Bolognese" data-price="3600" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Pepperoni Pizza"></div>
+        <div class="card-body">
+          <h3>Pepperoni Pizza</h3>
+          <div class="stars">★★★★★</div>
+          <p>Pepperoni pizza.</p>
+          <div class="card-footer">
+            <span class="price">₦4,200</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="48" data-name="Pepperoni Pizza" data-price="4200" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Cheeseburger"></div>
+        <div class="card-body">
+          <h3>Cheeseburger</h3>
+          <div class="stars">★★★★★</div>
+          <p>Double cheese burger.</p>
+          <div class="card-footer">
+            <span class="price">₦3,400</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="49" data-name="Cheeseburger" data-price="3400" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Chicken Wings"></div>
+        <div class="card-body">
+          <h3>Chicken Wings</h3>
+          <div class="stars">★★★★★</div>
+          <p>Crispy chicken wings.</p>
+          <div class="card-footer">
+            <span class="price">₦3,000</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="50" data-name="Chicken Wings" data-price="3000" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Caesar Salad"></div>
+        <div class="card-body">
+          <h3>Caesar Salad</h3>
+          <div class="stars">★★★★★</div>
+          <p>Fresh Caesar salad.</p>
+          <div class="card-footer">
+            <span class="price">₦2,500</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="51" data-name="Caesar Salad" data-price="2500" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Grilled Salmon"></div>
+        <div class="card-body">
+          <h3>Grilled Salmon</h3>
+          <div class="stars">★★★★★</div>
+          <p>Grilled salmon with veggies.</p>
+          <div class="card-footer">
+            <span class="price">₦4,800</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="52" data-name="Grilled Salmon" data-price="4800" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Beef Steak"></div>
+        <div class="card-body">
+          <h3>Beef Steak</h3>
+          <div class="stars">★★★★★</div>
+          <p>Tender beef steak.</p>
+          <div class="card-footer">
+            <span class="price">₦5,500</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="53" data-name="Beef Steak" data-price="5500" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Club Sandwich"></div>
+        <div class="card-body">
+          <h3>Club Sandwich</h3>
+          <div class="stars">★★★★★</div>
+          <p>Triple decker club sandwich.</p>
+          <div class="card-footer">
+            <span class="price">₦2,800</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="54" data-name="Club Sandwich" data-price="2800" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Chicken Alfredo"></div>
+        <div class="card-body">
+          <h3>Chicken Alfredo</h3>
+          <div class="stars">★★★★★</div>
+          <p>Creamy chicken alfredo pasta.</p>
+          <div class="card-footer">
+            <span class="price">₦4,000</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="55" data-name="Chicken Alfredo" data-price="4000" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Margherita Pizza"></div>
+        <div class="card-body">
+          <h3>Margherita Pizza</h3>
+          <div class="stars">★★★★★</div>
+          <p>Classic margherita pizza.</p>
+          <div class="card-footer">
+            <span class="price">₦3,800</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="56" data-name="Margherita Pizza" data-price="3800" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Fish &amp; Chips"></div>
+        <div class="card-body">
+          <h3>Fish &amp; Chips</h3>
+          <div class="stars">★★★★★</div>
+          <p>Crispy fish and chips.</p>
+          <div class="card-footer">
+            <span class="price">₦3,600</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="57" data-name="Fish &amp; Chips" data-price="3600" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Vegetable Pasta"></div>
+        <div class="card-body">
+          <h3>Vegetable Pasta</h3>
+          <div class="stars">★★★★★</div>
+          <p>Pasta with mixed vegetables.</p>
+          <div class="card-footer">
+            <span class="price">₦3,200</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="58" data-name="Vegetable Pasta" data-price="3200" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="BBQ Chicken"></div>
+        <div class="card-body">
+          <h3>BBQ Chicken</h3>
+          <div class="stars">★★★★★</div>
+          <p>BBQ glazed chicken.</p>
+          <div class="card-footer">
+            <span class="price">₦3,900</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="59" data-name="BBQ Chicken" data-price="3900" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>\n      <article class="product-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80" alt="Continental Platter"></div>
+        <div class="card-body">
+          <h3>Continental Platter</h3>
+          <div class="stars">★★★★★</div>
+          <p>Assorted continental dishes.</p>
+          <div class="card-footer">
+            <span class="price">₦6,000</span>
+            <button class="btn-yellow-outline" data-add-to-cart data-id="60" data-name="Continental Platter" data-price="6000" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80">Add To Cart</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>

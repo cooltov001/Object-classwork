@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart – Bites</title>
+  <link rel="stylesheet" href="styless.css">
+  <style>
+    .cart-item { display:flex; gap:1rem; padding:1rem; background:white; border-radius:12px; margin-bottom:0.75rem; align-items:center; }
+    .cart-item img { width:70px; height:70px; object-fit:cover; border-radius:8px; }
+  </style>
+</head>
+<body>
+  <header class="header"><div class="header-inner">
+    <a href="index.html" class="logo">Bites</a>
+    <a href="menu.html" class="btn btn-outline" style="margin-left:auto;">Continue Shopping</a>
+  </div></header>
+  <section class="section"><div id="list"></div></section>
+  <script src="app.js"></script>
+  <script>
+    function render() {
+      const cart = getCart();
+      const el = document.getElementById('list');
+      if (!cart.length) { el.innerHTML = '<h2>Your cart is empty</h2><a href="menu.html" class="btn btn-primary">Browse Menu</a>'; return; }
+      const total = cart.reduce((s,i)=>s+i.price*i.qty,0);
+      el.innerHTML = cart.map(i => `<div class="cart-item"><img src="${i.image}"><div style="flex:1"><strong>${i.name}</strong><br>₦${i.price.toLocaleString()} × ${i.qty}</div><div>₦${(i.price*i.qty).toLocaleString()}</div></div>`).join('') +
+        `<h3 style="margin-top:1.5rem">Total: ₦${total.toLocaleString()}</h3><button class="btn btn-primary" onclick="localStorage.removeItem('bites_cart');alert('Order placed!');render();">Place Order</button>`;
+    }
+    render();
+  </script>
+</body>
+</html>
